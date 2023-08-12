@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="trip.css">
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+      <img src="img/logo-color.svg" alt="">
+      <div class="container">
+                                                 
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"> More travel
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li> <i class="fa-solid fa-plane"></i>  Flight</li>
+              <li> <i class="fa-regular fa-building"></i> Stays</li>
+              <li> <i class="fa-solid fa-martini-glass"></i> Attractins</li>
+              <li> <i class="fa-solid fa-earth-africa"></i> Vise</li>
+              <li> <i class="fa-solid fa-umbrella"></i> Insurane</li>
+              <li> <i class="fa-solid fa-car"></i> Care Rentals</li>
+          </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bars" class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      </div>
+          
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto ml-auto">
+              <a class="link" href="#"> SUPPORT</a>
+            
+              <a class="nav-link1" href="">LANG : ENGLISH</a>
+              
+                      <a class="nav-link1" href="./trip.html"><i class="fa-solid fa-plane"></i> MY TRIP</a>
+                      <!-- <a class="nav-link1" href="#"><i class="fa-solid fa-user"></i> LOG IN</a> -->
+                      <a class="nav-link1" href=""><i class="fa-solid fa-plane"></i> LOG IN </a>
+                      <a class="nav-link1" href="./agentlogin.html"><i class="fa-solid fa-user"></i> AGENTLOGIN</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+
+
+
+
+
+      <div class="container">
+        <section class="login_mytrip pdtop_b position-relative">
+            <div class="tripid d-flex justify-content-between ">
+                <div class="formtrip">
+                    <h2>View/Cancel/Reschedule your Reservation <span>(As a Guest User)</span>
+                    </h2>
+                    <div class="formbs">
+                        <form method="POST" action="http://127.0.0.1:5500/WoxTravalTour.html#">
+                            <input type="hidden" name="_token" value="AY8SuTn6PKoXBzwqTmNXh0jKmpcGGp9WvtByjVGN">                        <div class="input-wrapper">
+                                <label for="Reference"> Select Booking Type</label>
+                                <select name="boking_type" id="cars">
+                                    <option value="" selected="" disabled="">Select Booking Type </option>
+                                    <option value="1">Flight</option>
+                                    <option value="2">Stays</option>
+                                    <option value="3">Packages</option>
+                                    <option value="4">Visa</option>
+                                    <option value="5">insurance</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="text" id="Reference" name="reference" required="" autocomplete="off">
+                                <label for="Reference">Reference ID/Booking ID/PNR</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="eamil" name="eamil" required="" autocomplete="off">
+                                <label for="Reference"> Email Address</label>
+                            </div>
+    
+                            <p>
+                                <i>You only have to fill your Woxtt Booking ID/Reference ID/PNR with Email Address used at
+                                    the
+                                    time of booking to retrieve the details</i>
+                            </p>
+                            <div class="btnsb_f text-center">
+                                <button type="submit" class="sbtrip">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="login_trip_dts">
+                    <span>
+                        <img src="https://woxtt.com/public/assets/images/travel_1.svg" alt="" class="imgres">
+                    </span>
+                </div>
+            </div>
+            <div class="border_line">
+                <span>OR</span>
+            </div>
+            <div class="d-flex justify-content-between ">
+                <div class="logintrip">
+                    <button data-toggle="modal" data-target="#poplogin">
+                        <i class="fa fa-sign-in mr-1"></i>Login or Create an account </button>
+                    <ul class="trip_pop_list">
+                        <li>How to reschedule your flight? <a href="#">Click here</a>
+                        </li>
+                        <li>How to cancel/claim refund of your flight? <a href="#">Click here</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="formtrip_txt">
+                    <p>
+                        <b>Note:-&nbsp;To View/Cancel/Reschedule/Change/Print your flight tickets, Please login into <a href="https://woxtt.com">https://woxtt.com</a>
+                        </b>
+                    </p>
+                    <p>
+                        <b>a)&nbsp;Registered User&nbsp;-&nbsp;</b>You can log in using a combination of your Booking
+                        /Reference ID or PNR along with your password.
+                    </p>
+                    <p>
+                        <b>b)&nbsp;Guest user&nbsp;-&nbsp;</b>You can log in using a combination of your Booking /Reference
+                        ID or PNR along with the email address entered at the time of booking.
+                    </p>
+                    <p class="smlltxt">If you are unable to login and cancel/reschedule your reservation, kindly call
+                        corresponding airlines if your date of travel is within the next 7 days. 
+                </p></div>
+    
+            </div>
+    
+    
+        </section>
+    </div>
+    <div class="footer_pattern">
+        <img src="./img/patter_f.svg" alt="" class="imgres">
+      </div>
+    <!-- footer -->
+<footer>
+    <div class="gapbox topmt bgmap">
+        <div class="row pt_ft">
+            <div class="col-sm-12 col-md-4">
+                <div class="f_box">
+                    <span>
+                      <img src="https://woxtt.com/public/assets/images/logo-color.svg" alt="" class="imgres imgblack">
+                        <img src="https://woxtt.com/public/assets/images/logo-white.svg" alt="" class="imgres imagewhite">
+                    </span>
+                    <p>Wox Travel &amp; Tour is dedicated in providing it's esteemed clients with a distinguished and memorable travel experience.</p>
+                    <span>
+                        <img style="width: 70px;" src="https://woxtt.com/public/assets/images/IATAlogo-color.svg" alt="" class="img-res imgblack">
+                        <img src="https://woxtt.com/public/assets/images/IATAlogo-white.svg" alt="" class="img-res imagewhite">
+                    </span>
+                    <div class="news_footer">
+                        <h3>Exclusive flight deals ❝in your inbox❞</h3>
+                        <div class="position-relative">
+                            <input type="text" placeholder="Email" class="ipt_ft">
+                            <button type="submit" class="sb_news">SUBSCRIBE</button>
+                            <span class="w_snt">*We do not send spam.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="contact_box_f">
+                    <div class="cnt_footer">
+                        <a href="tel:97317000566">
+                            <span class="icon_f">
+                                <img src="https://woxtt.com/public/assets/images/call.svg" class="imgblack" alt="">
+                                <img src="https://woxtt.com/public/assets/images/call-w.svg" class="imagewhite" alt="">
+                            </span>
+                            <span>+973 17000561</span>
+                        </a>
+                    </div>
+                    <div class="cnt_footer">
+                        <a href="mailto:info@woxtt.com">
+                            <span class="icon_f">
+                                <img src="https://woxtt.com/public/assets/images/message.svg" class="imgblack" alt="">
+                                <img src="https://woxtt.com/public/assets/images/message-w.svg" class="imagewhite" alt="">
+                            </span>
+                            <span>info@woxtt.com</span>
+                        </a>
+                    </div>
+                    <div class="cnt_footer">
+                        <a>
+                            <span class="icon_f">
+                                <img src="https://woxtt.com/public/assets/images/clock.svg" class="imgblack" alt="">
+                                <img src="https://woxtt.com/public/assets/images/clock-w.svg" class="imagewhite" alt="">
+                            </span>
+                            <span>Open 24/7.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="f_two d-flex justify-content-between">
+                    <div class="nav_f">
+                        <h4>Quick links</h4>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="https://woxtt.com">Home</a>
+                            </li>
+                            <li>
+                                <a href="https://woxtt.com/my-trip">My Trips</a>
+                            </li>
+                            <li>
+                                <a href="https://woxtt.com/about-us">About woxtt.com</a>
+                            </li>
+                            <li>
+                                <a href="https://woxtt.com/contact-us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_f">
+                        <h4>company</h4>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="https://woxtt.com/faq">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="https://woxtt.com/career">Career</a>
+                            </li>
+                            <li>
+                                <a href="https://woxtt.com/terms-conditions">Terms &amp; Conditions</a>
+                            </li>
+                            <li>
+                                <a href="https://woxtt.com/privacy-policy">Privacy &amp; Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_f ">
+        <span class="pmt">
+            <img src="https://woxtt.com/public/assets/images/payment-cards.jpg" alt="" class="img-res">
+        </span>
+        <div class="d-flex justify-content-center align-items-center pdrs">
+            <span>© 2022 copyright Wox Travel &amp; Tour | All rights reserved</span>
+        </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

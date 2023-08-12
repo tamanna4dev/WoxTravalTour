@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wox Traval & Tour</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="./WoxTravalTour.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    
+<img  src="img/logo-color.svg" alt="">
+<div class="container1">
+                                           
+  <div class="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"> More travel
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li> <i class="fa-solid fa-plane"></i>  Flight</li>
+        <li> <i class="fa-regular fa-building"></i> Stays</li>
+        <li> <i class="fa-solid fa-martini-glass"></i> Attractins</li>
+        <li> <i class="fa-solid fa-earth-africa"></i> Vise</li>
+        <li> <i class="fa-solid fa-umbrella"></i> Insurane</li>
+        <li> <i class="fa-solid fa-car"></i> Care Rentals</li>
+    </ul>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="bars" class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+</button>
+</div>
+    
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto ml-auto">
+        <a class="link" href="#"> SUPPORT</a>
+        <!-- <a class="nav-link1" href="#">  -->
+
+            <button class="nav-link1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LANT:ENGLISH</button>
+
+            <div id="id01" class="modal">
+              <form class="modal-content animate"  method="post">
+                <div class="imgcontainer1">
+            
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <!-- <img src="img/travel_log (1).svg" alt="Avatar" class="avatar"> -->
+                </div>
+            
+                <div class="container">
+              <h3>Regional settings</h3>
+              
+            <div class="line1"></div>
+            <br>
+                  <label for="uname"><i class="fa fa-language mr-1" aria-hidden="true"></i> Language </label>
+                  <input type="text" placeholder="English(UnitedKingdom)" name="uname" required>
+            
+                  <label for="psw"><i class="fa fa-globe mr-1" aria-hidden="true"></i> Country / Region
+                </label>
+                  <p style="font-size: 12px;">Selecting the country you’re in will give you local deals and information.</p>
+                  <input type="password" placeholder="Select" name="psw" required>
+                    
+                  
+                  <label for="psw"><i class="fa-sharp fa-regular fa-money-bill"></i> Currency</label>
+                  <input type="password" placeholder="Select" name="psw" required>
+            
+                  <button  style="background: #4172b8; color: #fff;"type="submit">Next</button>
+                  <button  type="submit">Cencel</button>
+            
+                  
+                </div>
+            
+                
+              </form>
+            </div>
+
+        <a class="nav-link1" href="./trip.html"><i class="fa-solid fa-plane"></i> MY TRIP</a>
+
+        <!-- <a class="nav-link1" href="#"><i class="fa-solid fa-user"></i> LOG IN</a> -->
+
+        <button class="nav-link1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa-solid fa-user"></i> LOG IN </button>
+
+        <div id="id01" class="modal">
+          <form class="modal-content animate"  method="post">
+            <div class="imgcontainer">
+        
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="img/travel_log.svg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+          <h3>Regional settings</h3>
+          
+        <div class="line"></div>
+        <br>
+              <label for="uname"><i class="fa fa-language mr-1" aria-hidden="true"></i> Language </label>
+              <input type="text" placeholder="English(UnitedKingdom)" name="uname" required>
+        
+              <label for="psw"><i class="fa fa-globe mr-1" aria-hidden="true"></i> Country / Region
+            </label>
+              <p style="font-size: 12px;">Selecting the country you’re in will give you local deals and information.</p>
+              <input type="password" placeholder="Select" name="psw" required>
+                
+              
+              <label for="psw"><i class="fa-sharp fa-regular fa-money-bill"></i> Currency</label>
+              <input type="password" placeholder="Select" name="psw" required>
+        
+              <button  style="background: #4172b8; color: #fff;"type="submit">Next</button>
+              <button  type="submit">Cencel</button>
+        
+              
+            </div>
+        
+            
+          </form>
+        </div>
+        <a class="nav-link1" href="./agentlogin.html"><i class="fa-solid fa-user"></i> AGENT LOGIN</a>
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+
+<!-- section2 -->
+<!-- <div class="boxthems showcog">
+  <button type="button" class="cogbtn">
+       <i class="fa fa-cog" aria-hidden="true"></i>
+      <i class="fa-solid fa-gear fa-spin"></i>
+  </button>
+  <span>Choice Theme</span>
+  <ul id="switcher">
+      <li id="BlackButton"></li>
+      <li id="whiteButton"></li>
+      <li id="darkblue"></li>
+  </ul>
+</div> -->
+
+<section class="search_box  position-relative">
+  <div class="tab_nav">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+  <li class="active">
+      <a class="nav-link">Flight</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link">Stays</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link">Attractions</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link">Visa</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link">Insurance</a>
+  </li>
+  
+  <li class="nav-item">
+      <a class="nav-link">Car Rentals</a>
+  </li>
+</ul>
+
+
+
+<div class="tabsb d-flex">
+  <div class="sbt1 leftrds activetb">
+      <input type="radio" id="tab1" name="tab" checked="">
+      <label for="tab1">Round Trip</label>
+  </div>
+  <div class="sbt1">
+      <input type="radio" id="tab2" name="tab">
+      <label for="tab2">One Way</label>
+  </div>
+  <div class="sbt1 righttrds">
+      <input type="radio" id="tab3" name="tab">
+      <label for="tab3">Multi-city</label>
+  </div>
+</div>
+</div>
+<div class="div">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 ">
+      <div class="card">
+          <div class="card-body">From</div>
+      </div>
+  </div>
+      
+      <div class="col-md-3 ">
+        <div class="card">
+            <div class="card-body">To</div>
+        </div>
+    </div>
+
+      <div class="col-md-3  ">
+          <div class="card">
+              <div class="card-body">Depart-Return</div>
+          </div>
+      </div>
+
+
+      <div class="col-md-3 ">
+        <div class="card">
+            <div class="card-body">Travelers</div>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="container;">
+
+  <div class="row">
+      <!-- <h5 class="form">From</h5> -->
+
+      <div style="border: none;" class="col-md-3">
+          <div style="border: 1px solid #ddd;" class="card">
+              <div class="select">
+                  <form>
+                    <label class="icon"><i class="fa-solid fa-location-dot"></i></label>
+                    <select name="traval" id="traval">
+                       <option value="volvo">Ainsworth (ANW)</option>
+                      <option value="saab">Antigua (ANU)</option>
+                      <option value="opel">Annapolis (ANP)</option>
+                      <option value="opel">Angouleme (ANG)</option>
+                        <option value="volvo">Anchorage (ANC)</option>
+                      <option value="saab"> Tradewind Airport</option>
+                      <option value="volvo">Ainsworth (ANW)</option>
+                      <option value="saab">Antigua (ANU)</option>
+                      <option value="opel">Annapolis (ANP)</option>
+                      <option value="opel">Angouleme (ANG)</option>
+                        <option value="volvo">Anchorage (ANC)</option>
+                      <option value="saab"> Tradewind Airport</option>
+                      <option value="volvo">Ainsworth (ANW)</option>
+                      <option value="saab">Antigua (ANU)</option>
+                      <option value="opel">Annapolis (ANP)</option>
+                      <option value="opel">Angouleme (ANG)</option>
+                        <option value="volvo">Anchorage (ANC)</option>
+                      <option value="saab"> Tradewind Airport</option>
+                      <option value="volvo">Ainsworth (ANW)</option>
+                      <option value="saab">Antigua (ANU)</option>
+                      <option value="opel">Annapolis (ANP)</option>
+                      <option value="opel">Angouleme (ANG)</option>
+                        <option value="volvo">Anchorage (ANC)</option>
+                      <option value="saab"> Tradewind Airport</option>
+                    </select>
+                  </form>
+                
+                  </div>
+          </div>
+      </div>
+      
+      <!-- <h5 class="form">To</h5> -->
+      <div style="border: none;" class="col-md-3">
+        <div style="border: 1px solid #ddd;" class="card">
+
+            <div class="select">
+                <form>
+                  <label class="icon"><i class="fa-solid fa-location-dot"></i></label>
+                  <select name="traval" id="traval">
+                    <option value="volvo">Ainsworth (ANW)</option>
+                    <option value="saab">Antigua (ANU)</option>
+                    <option value="opel">Annapolis (ANP)</option>
+                    <option value="opel">Angouleme (ANG)</option>
+                    <option value="volvo">Anchorage (ANC)</option>
+                    <option value="saab"> Tradewind Airport</option>
+                    <option value="volvo">Ainsworth (ANW)</option>
+                    <option value="saab">Antigua (ANU)</option>
+                    <option value="opel">Annapolis (ANP)</option>
+                    <option value="opel">Angouleme (ANG)</option>
+                    <option value="volvo">Anchorage (ANC)</option>
+                    <option value="saab"> Tradewind Airport</option>
+                    <option value="volvo">Ainsworth (ANW)</option>
+                    <option value="saab">Antigua (ANU)</option>
+                    <option value="opel">Annapolis (ANP)</option>
+                    <option value="opel">Angouleme (ANG)</option>
+                    <option value="volvo">Anchorage (ANC)</option>
+                    <option value="saab"> Tradewind Airport</option>
+                    <option value="volvo">Ainsworth (ANW)</option>
+                    <option value="saab">Antigua (ANU)</option>
+                    <option value="opel">Annapolis (ANP)</option>
+                    <option value="opel">Angouleme (ANG)</option>
+                    <option value="volvo">Anchorage (ANC)</option>
+                    <option value="saab"> Tradewind Airport</option>
+                  </select>
+                </form>
+              
+                </div>
+        </div>
+    </div>
+      <!-- <h5 class="form">Depart-Return</h5> -->
+
+      <div class="col-md-3 ">
+        <div style="border: 1px solid #ddd;" class="card">
+
+              <div class="card-body">  <i class="fa-solid fa-calendar-days"></i> Depart-Return</div>
+          </div>
+      </div>
+      <!-- <h5 class="form">Travelers</h5> -->
+
+      <div class="col-md-3 ">
+        <div style="border: 1px solid #ddd;" class="card">
+
+              <div class="card-body"> <i class="fa-solid fa-user"></i> 1 Adult - Economy</div>
+          </div>
+      </div>
+  
+  
+      
+  
+  
+  
+    </div>
+    <br><br>
+    <button type="submit" class="btn-grad ftbtn_src" id="btn-search-flight">
+      <i class="fa-solid fa-paper-plane"></i> Search Flights
+  </button>
+</div>
+</div>
+ 
+
+</section>
+<br><br>
+<!-- section3 -->
+<div class="container">
+  <div class="row ">
+    <div class="col-md-3 ">
+      <div class="para">
+          <div class="heading_left_area">
+              <h2>Go beyond your <span>imagination</span>
+              </h2>
+              <h5>Discover your ideal experience with us</h5>
+          </div>
+      </div>
+  </div>
+  
+  <div class="col-md-3 ">
+      <div class="card">
+<img src="./img/imagination1.png" alt="">
+
+      </div>
+  </div>
+
+  <div class="col-md-3 ">
+      <div class="card">
+<img src="img/imagination2.png" alt="">
+
+      </div>
+  </div>
+
+
+  <div class="col-md-3 ">
+      <div class="card">
+<img src="img/imagination3.png" alt="">
+      </div>
+  </div>
+  </div>
+</div>
+<br><br>
+
+
+<!-- section4 -->
+
+<div class="row">
+      <div class="section">
+          <h2><span>FLY WITH US BY</span></h2>
+          <div class="line"></div>
+
+      </div>
+  </div>
+  <br><br>
+<div class="main-carousel" >
+  <div class="cell"><img src="./img/flogo1.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo2.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo3.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo4.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo5.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo6.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo7.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo8.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo9.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo10.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo10.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo11.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo12.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo13.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo15.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo16.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo1.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo2.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo3.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo4.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo5.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo6.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo7.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo8.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo9.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo10.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo10.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo11.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo12.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo13.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo15.jpg" alt=""></div>
+  <div class="cell"><img src="./img/flogo16.jpg" alt=""></div>
+
+</div>
+    <br><br><br>
+
+<!-- section5 -->
+
+<div class="row">
+  <div class="section">
+      <h2><span>Top destinations</span></h2>
+      <div class="line"></div>
+
+  </div>
+</div>
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="destinations_content_box img_animation">
+            <img src="https://woxtt.com/public/assets/images/big-img.png" alt="img">
+            <div class="destinations_content_inner">
+                <h2>Up to</h2>
+                <div class="destinations_big_offer">
+                    <h1>50</h1>
+                    <h6>
+                        <span>%</span>
+                        <span>Off</span>
+                    </h6>
+                </div>
+                <h2>Holiday packages</h2>
+                <a href="#" class="btn btn_theme btn_md btn-grad">Book now</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination1.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">Tokyo </a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination2.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">London</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination3.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">Rome</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination4.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">Amsterdam</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination5.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">Milan</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination6.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">Madrid</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination7.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">Dubai</a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="destinations_content_box img_animation">
+                    <a href="#">
+                        <img src="https://woxtt.com/public/assets/images/destination8.png" alt="img">
+                    </a>
+                    <div class="destinations_content_inner">
+                        <h3>
+                            <a href="#">New York </a>
+                        </h3>
+                    </div>
+                </div>
+                <div style="width: 130%; " class="destinations_content_box">
+                    <a href="#" class="btn btn_theme btn_md w-100 dse btn-grad">View all</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- section6 -->
+<section class="appbg">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="headingapp position-relative text-center">
+                  <h2>Download App Now !</h2>
+                  <div class="qr_ap d-flex justify-content-center">
+                      <div class="ap1">
+                          <a href="#" class="mb-2">
+                              <img style="width: 160px;" src="./img/ap2.png" alt="" class="img-res">
+                          </a>
+                          <a href="#">
+                              <img style="width: 160px;" src="./img/ap1.png" alt="" class="img-res">
+                          </a>
+                      </div>
+                      <div class="ap2">
+                          <span>
+                              <img style="width: 125px; height: 120px;" src="./img/ap3.png" alt="" class="img-res">
+                          </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</section>
+
+<!-- section7 -->
+<div class="footer_pattern">
+  <img src="./img/patter_f.svg" alt="" class="imgres">
+</div>
+
+
+
+<!-- section8 -->
+<!-- footer -->
+<footer>
+  <div class="gapbox topmt bgmap">
+      <div class="row pt_ft">
+          <div class="col-sm-12 col-md-4">
+              <div class="f_box">
+                  <span>
+                    <img src="https://woxtt.com/public/assets/images/logo-color.svg" alt="" class="imgres imgblack">
+                      <img src="https://woxtt.com/public/assets/images/logo-white.svg" alt="" class="imgres imagewhite">
+                  </span>
+                  <p>Wox Travel &amp; Tour is dedicated in providing it's esteemed clients with a distinguished and memorable travel experience.</p>
+                  <span>
+                      <img style="width: 70px;" src="https://woxtt.com/public/assets/images/IATAlogo-color.svg" alt="" class="img-res imgblack">
+                      <img src="https://woxtt.com/public/assets/images/IATAlogo-white.svg" alt="" class="img-res imagewhite">
+                  </span>
+                  <div class="news_footer">
+                      <h3>Exclusive flight deals ❝in your inbox❞</h3>
+                      <div class="position-relative">
+                          <input type="text" placeholder="Email" class="ipt_ft">
+                          <button type="submit" class="sb_news">SUBSCRIBE</button>
+                          <span class="w_snt">*We do not send spam.</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+              <div class="contact_box_f">
+                  <div class="cnt_footer">
+                      <a href="tel:97317000566">
+                          <span class="icon_f">
+                              <img src="https://woxtt.com/public/assets/images/call.svg" class="imgblack" alt="">
+                              <img src="https://woxtt.com/public/assets/images/call-w.svg" class="imagewhite" alt="">
+                          </span>
+                          <span>+973 17000561</span>
+                      </a>
+                  </div>
+                  <div class="cnt_footer">
+                      <a href="mailto:info@woxtt.com">
+                          <span class="icon_f">
+                              <img src="https://woxtt.com/public/assets/images/message.svg" class="imgblack" alt="">
+                              <img src="https://woxtt.com/public/assets/images/message-w.svg" class="imagewhite" alt="">
+                          </span>
+                          <span>info@woxtt.com</span>
+                      </a>
+                  </div>
+                  <div class="cnt_footer">
+                      <a>
+                          <span class="icon_f">
+                              <img src="https://woxtt.com/public/assets/images/clock.svg" class="imgblack" alt="">
+                              <img src="https://woxtt.com/public/assets/images/clock-w.svg" class="imagewhite" alt="">
+                          </span>
+                          <span>Open 24/7.</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+              <div class="f_two d-flex justify-content-between">
+                  <div class="nav_f">
+                      <h4>Quick links</h4>
+                      <ul class="clearfix">
+                          <li>
+                              <a href="https://woxtt.com">Home</a>
+                          </li>
+                          <li>
+                              <a href="https://woxtt.com/my-trip">My Trips</a>
+                          </li>
+                          <li>
+                              <a href="https://woxtt.com/about-us">About woxtt.com</a>
+                          </li>
+                          <li>
+                              <a href="https://woxtt.com/contact-us">Contact Us</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="nav_f">
+                      <h4>company</h4>
+                      <ul class="clearfix">
+                          <li>
+                              <a href="https://woxtt.com/faq">FAQs</a>
+                          </li>
+                          <li>
+                              <a href="https://woxtt.com/career">Career</a>
+                          </li>
+                          <li>
+                              <a href="https://woxtt.com/terms-conditions">Terms &amp; Conditions</a>
+                          </li>
+                          <li>
+                              <a href="https://woxtt.com/privacy-policy">Privacy &amp; Policy</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="bottom_f ">
+      <span class="pmt">
+          <img src="https://woxtt.com/public/assets/images/payment-cards.jpg" alt="" class="img-res">
+      </span>
+      <div class="d-flex justify-content-center align-items-center pdrs">
+          <span>© 2022 copyright Wox Travel &amp; Tour | All rights reserved</span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script>
+  $('.main-carousel').flickity({
+// options
+cellAlign: 'left',
+autoPlay: 1500,
+pauseAutoPlayOnHover: false,
+pageDots: false
+// wrapAround: true,
+// freeScroll: true
+});
+</script>
+  
+
+<!-- button -->
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+<!--bootstrap 5 -->
+<!-- JavaScript and dependencies -->
+<script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity=" sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin=" anonymous "></script>
+<script src=" https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js " integrity=" sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/ " crossorigin=" anonymous "></script>
+</body>
+</html>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
